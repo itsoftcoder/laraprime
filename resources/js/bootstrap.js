@@ -11,6 +11,10 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+    require('metismenu')
+    require('./simplebar.min')
+    require('./core')
+
 } catch (e) {}
 
 /**

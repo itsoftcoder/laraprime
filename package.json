@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "chart.js": "^3.3.2",
+        "metismenu": "^3.0.7",
         "primeflex": "^2.0.0",
         "primeicons": "^4.1.0",
         "primevue": "^2.4.2",

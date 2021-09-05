@@ -1,7 +1,10 @@
 import VueRouter from 'vue-router';
-const Welcome = () => import('./views/Welcome.vue')
-const About = () => import('./views/About.vue')
-const CreateDesignation = () => import('./views/designations/CreateDesignation.vue')
+const Welcome = () => import('./views/Welcome.vue');
+const About = () => import('./views/About.vue');
+const CreateDesignation = () => import('./views/designations/CreateDesignation.vue');
+const CreateCustomer = () => import('./views/customers/CreateCustomer.vue');
+const From = () => import('./views/forms/Form.vue');
+
 
 const routes = [
     {
@@ -19,9 +22,22 @@ const routes = [
         name: 'CreateDesignation',
         component: CreateDesignation
     },
+    {
+        path: '/create-customer/:id',
+        name: 'CreateCustomer',
+        component: CreateCustomer
+    },
+    {
+        path: '/form',
+        name: 'Form',
+        component: From
+    },
 
 ]
 
-export default new VueRouter({ routes });
+export default new VueRouter({
+    mode: 'history',
+    routes
+});
 
 

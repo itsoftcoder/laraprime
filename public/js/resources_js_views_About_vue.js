@@ -25,6 +25,10 @@ __webpack_require__.r(__webpack_exports__);
   name: 'About',
   components: {
     Content: _Content__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  mounted: function mounted() {
+    console.log(this.$route.path);
+    this.$emit('rtest', this.$route.path);
   }
 });
 

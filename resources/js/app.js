@@ -30,6 +30,7 @@ import MultiSelect from 'primevue/multiselect';
 import Breadcrumb from 'primevue/breadcrumb';
 import Toast from 'primevue/toast';
 import Sidebar from 'primevue/sidebar';
+import InputMask from 'primevue/inputmask';
 
 
 Vue.use(PrimeVue)
@@ -53,7 +54,6 @@ import App from './views/App.vue'
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('Sidebar', require('./views/Sidebar.vue').default);
-Vue.component('InputText', InputText);
 Vue.component('Card', Card);
 Vue.component('Button', Button);
 Vue.component('DataTable', DataTable);
@@ -63,6 +63,9 @@ Vue.component('MultiSelect', MultiSelect);
 Vue.component('Breadcrumb', Breadcrumb);
 Vue.component('Toast',Toast);
 Vue.component('Sidebar',Sidebar);
+Vue.component('InputText', InputText)
+Vue.component('InputMask', InputMask)
+
 
 
 
@@ -85,5 +88,3 @@ const app = new Vue({
     router: routes,
     render: h => h(App)
 });
-
-
