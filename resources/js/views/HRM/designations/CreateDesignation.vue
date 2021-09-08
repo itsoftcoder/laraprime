@@ -38,11 +38,14 @@
 <script>
 import Checkbox from "primevue/checkbox";
 import Textarea from "primevue/textarea";
+import Button from 'primevue/button';
+
 export default {
   name: "CreateDesignation",
   components: {
     Textarea,
     Checkbox,
+    Button,
   },
 
   data() {

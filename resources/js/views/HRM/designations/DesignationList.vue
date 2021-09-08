@@ -54,8 +54,11 @@
   </div>
 </template>
 <script>
-
+import Button from 'primevue/button';
 export default {
+   components: {
+    Button,
+  },
     name:'designationList',
     data() {
         return {

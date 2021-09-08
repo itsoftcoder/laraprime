@@ -34,7 +34,51 @@
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/department-list">Department List</router-link></a>
 						</li>
 					</ul>
+			
 				</li>
+
+						<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='pi pi-home'></i>
+						</div>
+						<div class="menu-title">Base</div>
+					</a>
+					<ul>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-brand"> Create Brand</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/brand-list">Brand list</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-manufacture">Create Manufacture</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
+						</li>
+					</ul>
+			
+				</li>
+
+							<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='pi pi-home'></i>
+						</div>
+						<div class="menu-title">Purchase</div>
+					</a>
+					<ul>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase-return"> Purchase Return</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/purchase-return-list">Purchase Return List</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-manufacture">Create Manufacture</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
+						</li>
+					</ul>
+			
+				</li>
+				
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="pi pi-folder"></i>

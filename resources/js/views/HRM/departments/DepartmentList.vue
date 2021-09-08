@@ -61,7 +61,13 @@
   </div>
 </template>
 <script>
+import Button from 'primevue/button';
+
+ 
 export default {
+    components: {
+    Button,
+  },
     name:"DepartmentList",
     data() {
         return {
@@ -84,16 +90,16 @@ export default {
          { label: "HRM"},
         { label: "Department" },
         { label: "Create Department ",to:"/create-department"},
-        { label: "Department List" ,to:"/department-list"},
+        { label: "Department List" },
       ],
         }
     },
     methods: {
         onRowEditInit(event) {
-            this.originalRows[event.index] = {...this.designations[event.index]};
+            this.originalRows[event.index] = {...this.departments[event.index]};
         },
         onRowEditCancel(event) {
-            Vue.set(this.designations, event.index, this.originalRows[event.index]);
+            Vue.set(this.departments, event.index, this.originalRows[event.index]);
         },
     }
 }

@@ -54,10 +54,12 @@
 <script>
 import Dropdown from "primevue/dropdown";
 import Checkbox from "primevue/checkbox";
+import Button from 'primevue/button';
 export default {
   components: {
     Dropdown,
     Checkbox,
+    Button,
   },
 
   name: "CreateDepartment",

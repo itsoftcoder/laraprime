@@ -4,6 +4,17 @@ const CreateDesignation = () => import('./views/HRM/designations/CreateDesignati
 const DesignationList = () => import('./views/HRM/designations/DesignationList.vue');
 const CreateDepartment = () => import('./views/HRM/departments/CreateDepartment.vue');
 const DepartmentList = () => import('./views/HRM/departments/DepartmentList.vue');
+const CreateBrand = () => import('./views/Base/brands/CreateBrand.vue');
+const BrandList = () => import('./views/Base/brands/BrandList.vue');
+const CreateManufacture = () => import('./views/Base/manufactures/CreateManufacture.vue');
+const ManufactureList = () => import('./views/Base/manufactures/ManufactureList.vue');
+const Sales = () => import('./views/sales.vue');
+const PurchaseReturn = () => import('./views/purchase/PurchaseReturn.vue');
+const PurchaseReturnList = () => import('./views/purchase/PurchaseReturnList.vue');
+
+
+
+
 
 const routes = [
     {
@@ -31,7 +42,42 @@ const routes = [
         name: 'DepartmentList',
         component: DepartmentList
     },
- 
+    {
+        path: '/create-brand',
+        name: 'CreateBrand',
+        component: CreateBrand
+    },
+    {
+        path: '/brand-list',
+        name: 'BrandList',
+        component: BrandList
+    },
+    {
+        path: '/create-manufacture',
+        name: 'CreateManufacture',
+        component: CreateManufacture
+    },
+    {
+        path: '/manufacture-list',
+        name: 'ManufactureList',
+        component: ManufactureList
+    },
+    {
+        path: '/sales',
+        name: 'Sale',
+        component: Sales
+    },
+    {
+        path: '/create-purchase-return',
+        name: 'PurchaseReturn',
+        component: PurchaseReturn
+    },
+        {
+        path: '/purchase-return-list',
+        name: ' PurchaseReturnList',
+        component:PurchaseReturnList
+    },
+   
 
 ]
 
