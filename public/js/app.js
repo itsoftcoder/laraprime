@@ -2732,6 +2732,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -3105,12 +3123,28 @@ var Sales = function Sales() {
   return __webpack_require__.e(/*! import() */ "resources_js_views_sales_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/sales.vue */ "./resources/js/views/sales.vue"));
 };
 
-var PurchaseReturn = function PurchaseReturn() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_purchase_PurchaseReturn_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchase/PurchaseReturn.vue */ "./resources/js/views/purchase/PurchaseReturn.vue"));
+var CreatePurchaseReturn = function CreatePurchaseReturn() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_purchases_CreatePurchaseReturn_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchases/CreatePurchaseReturn.vue */ "./resources/js/views/purchases/CreatePurchaseReturn.vue"));
 };
 
 var PurchaseReturnList = function PurchaseReturnList() {
-  return __webpack_require__.e(/*! import() */ "resources_js_views_purchase_PurchaseReturnList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchase/PurchaseReturnList.vue */ "./resources/js/views/purchase/PurchaseReturnList.vue"));
+  return __webpack_require__.e(/*! import() */ "resources_js_views_purchases_PurchaseReturnList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchases/PurchaseReturnList.vue */ "./resources/js/views/purchases/PurchaseReturnList.vue"));
+};
+
+var PurchaseReturnInvoice = function PurchaseReturnInvoice() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_purchases_PurchaseReturnInvoice_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/purchases/PurchaseReturnInvoice.vue */ "./resources/js/views/purchases/PurchaseReturnInvoice.vue"));
+};
+
+var LockerList = function LockerList() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_lockers_LockerList_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/lockers/LockerList.vue */ "./resources/js/views/lockers/LockerList.vue"));
+};
+
+var UpdateLocker = function UpdateLocker() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_lockers_UpdateLocker_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/lockers/UpdateLocker.vue */ "./resources/js/views/lockers/UpdateLocker.vue"));
+};
+
+var CreateLocker = function CreateLocker() {
+  return __webpack_require__.e(/*! import() */ "resources_js_views_lockers_CreateLocker_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./views/lockers/CreateLocker.vue */ "./resources/js/views/lockers/CreateLocker.vue"));
 };
 
 var routes = [{
@@ -3155,12 +3189,28 @@ var routes = [{
   component: Sales
 }, {
   path: '/create-purchase-return',
-  name: 'PurchaseReturn',
-  component: PurchaseReturn
+  name: 'CreatePurchaseReturn',
+  component: CreatePurchaseReturn
 }, {
   path: '/purchase-return-list',
   name: ' PurchaseReturnList',
   component: PurchaseReturnList
+}, {
+  path: '/purchase-return-invoice',
+  name: ' PurchaseReturnInvoice',
+  component: PurchaseReturnInvoice
+}, {
+  path: '/locker-list',
+  name: ' LockerList',
+  component: LockerList
+}, {
+  path: '/update-locker',
+  name: ' UpdateLocker',
+  component: UpdateLocker
+}, {
+  path: '/create-locker',
+  name: ' CreateLocker',
+  component: CreateLocker
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_0__.default({
   // mode: 'history',
@@ -57382,23 +57432,10 @@ var render = function() {
                     "a",
                     [
                       _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c("router-link", { attrs: { to: "/" } }, [
-                        _vm._v("Home")
-                      ])
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
                         { attrs: { to: "/create-purchase-return" } },
-                        [_vm._v(" Purchase Return")]
+                        [_vm._v(" Create Purchase Return")]
                       )
                     ],
                     1
@@ -57427,8 +57464,8 @@ var render = function() {
                       _c("i", { staticClass: "pi pi-arrow-right" }),
                       _c(
                         "router-link",
-                        { attrs: { to: "/create-manufacture" } },
-                        [_vm._v("Create Manufacture")]
+                        { attrs: { to: "/purchase-return-invoice" } },
+                        [_vm._v("Purchase Return Invoice")]
                       )
                     ],
                     1
@@ -57452,11 +57489,69 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
+            _c("li", [
+              _vm._m(4),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/create-locker" } }, [
+                        _vm._v(" Create Locker")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/locker-list" } }, [
+                        _vm._v("Loker List")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c("router-link", { attrs: { to: "/update-locker" } }, [
+                        _vm._v("Update Locker")
+                      ])
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c(
+                    "a",
+                    [
+                      _c("i", { staticClass: "pi pi-arrow-right" }),
+                      _c(
+                        "router-link",
+                        { attrs: { to: "/manufacture-list" } },
+                        [_vm._v("Manufacture List")]
+                      )
+                    ],
+                    1
+                  )
+                ])
+              ])
+            ]),
             _vm._v(" "),
             _vm._m(5),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("UI Elements")]),
             _vm._v(" "),
             _vm._m(6),
             _vm._v(" "),
@@ -57466,15 +57561,15 @@ var render = function() {
             _vm._v(" "),
             _vm._m(9),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
-            _vm._v(" "),
             _vm._m(10),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Forms & Tables")]),
             _vm._v(" "),
             _vm._m(11),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
-            _vm._v(" "),
             _vm._m(12),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Pages")]),
             _vm._v(" "),
             _vm._m(13),
             _vm._v(" "),
@@ -57486,24 +57581,26 @@ var render = function() {
             _vm._v(" "),
             _vm._m(17),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
-            _vm._v(" "),
             _vm._m(18),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Charts & Maps")]),
             _vm._v(" "),
             _vm._m(19),
             _vm._v(" "),
-            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
-            _vm._v(" "),
             _vm._m(20),
+            _vm._v(" "),
+            _c("li", { staticClass: "menu-label" }, [_vm._v("Others")]),
             _vm._v(" "),
             _vm._m(21),
             _vm._v(" "),
-            _vm._m(22)
+            _vm._m(22),
+            _vm._v(" "),
+            _vm._m(23)
           ])
         ]
       ),
       _vm._v(" "),
-      _vm._m(23),
+      _vm._m(24),
       _vm._v(" "),
       _c("div", { staticClass: "page-wrapper" }, [
         _c("div", { staticClass: "page-content" }, [_c("router-view")], 1)
@@ -57511,12 +57608,12 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "overlay toggle-icon" }),
       _vm._v(" "),
-      _vm._m(24),
+      _vm._m(25),
       _vm._v(" "),
-      _vm._m(25)
+      _vm._m(26)
     ]),
     _vm._v(" "),
-    _vm._m(26)
+    _vm._m(27)
   ])
 }
 var staticRenderFns = [
@@ -57559,7 +57656,7 @@ var staticRenderFns = [
       { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
       [
         _c("div", { staticClass: "parent-icon" }, [
-          _c("i", { staticClass: "pi pi-home" })
+          _c("i", { staticClass: "pi pi-arrow-right" })
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu-title" }, [_vm._v("Base")])
@@ -57579,6 +57676,22 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "menu-title" }, [_vm._v("Purchase")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      { staticClass: "has-arrow", attrs: { href: "javascript:;" } },
+      [
+        _c("div", { staticClass: "parent-icon" }, [
+          _c("i", { staticClass: "pi pi-home" })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "menu-title" }, [_vm._v("Lokers")])
       ]
     )
   },
@@ -75290,7 +75403,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_Base_brands_CreateBrand_vue":1,"resources_js_views_Base_brands_BrandList_vue":1,"resources_js_views_Base_manufactures_CreateManufacture_vue":1,"resources_js_views_Base_manufactures_ManufactureList_vue":1,"resources_js_views_sales_vue":1,"resources_js_views_purchase_PurchaseReturn_vue":1,"resources_js_views_purchase_PurchaseReturnList_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Welcome_vue":1,"resources_js_views_HRM_designations_CreateDesignation_vue":1,"resources_js_views_HRM_designations_DesignationList_vue":1,"resources_js_views_HRM_departments_CreateDepartment_vue":1,"resources_js_views_HRM_departments_DepartmentList_vue":1,"resources_js_views_Base_brands_CreateBrand_vue":1,"resources_js_views_Base_brands_BrandList_vue":1,"resources_js_views_Base_manufactures_CreateManufacture_vue":1,"resources_js_views_Base_manufactures_ManufactureList_vue":1,"resources_js_views_sales_vue":1,"resources_js_views_purchases_CreatePurchaseReturn_vue":1,"resources_js_views_purchases_PurchaseReturnList_vue":1,"resources_js_views_purchases_PurchaseReturnInvoice_vue":1,"resources_js_views_lockers_LockerList_vue":1,"resources_js_views_lockers_UpdateLocker_vue":1,"resources_js_views_lockers_CreateLocker_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

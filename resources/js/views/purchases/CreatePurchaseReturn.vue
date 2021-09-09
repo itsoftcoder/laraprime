@@ -1,6 +1,8 @@
 <template>
   <div>
     <Breadcrumb :home="home" :model="Breadcrumb" />
+ 
+
     <div class="p-d-flex p-jc-between p-mt-2">
       <div><h3>Purchase Return</h3></div>
       <div>
@@ -194,7 +196,7 @@ export default {
    Calendar,
    Button
   },
-  name: "PurchaseReturn",
+  name: "CreatePurchaseReturn",
   data() {
     return {
       date1 :null,
@@ -204,7 +206,10 @@ export default {
       Breadcrumb: [
         { label: "Purchase"},
         { label: "Puchase Return List",to:"/purchase-return-list" },
+          { label: "Purchase Return Invoice",to:"/purchase-return-invoice"},
         { label: "Create Puchase Return"},
+       
+        
 
       ],
     };

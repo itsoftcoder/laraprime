@@ -39,7 +39,7 @@
 
 						<li>
 					<a href="javascript:;" class="has-arrow">
-						<div class="parent-icon"><i class='pi pi-home'></i>
+						<div class="parent-icon"><i class='pi pi-arrow-right'></i>
 						</div>
 						<div class="menu-title">Base</div>
 					</a>
@@ -65,13 +65,31 @@
 						<div class="menu-title">Purchase</div>
 					</a>
 					<ul>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/">Home</router-link></a>
-						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase-return"> Purchase Return</router-link></a>
+						
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-purchase-return"> Create Purchase Return</router-link></a>
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/purchase-return-list">Purchase Return List</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-manufacture">Create Manufacture</router-link></a>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/purchase-return-invoice">Purchase Return Invoice</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
+						</li>
+					</ul>
+			
+				</li>
+					<li>
+					<a href="javascript:;" class="has-arrow">
+						<div class="parent-icon"><i class='pi pi-home'></i>
+						</div>
+						<div class="menu-title">Lokers</div>
+					</a>
+					<ul>
+						
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/create-locker"> Create Locker</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/locker-list">Loker List</router-link></a>
+						</li>
+						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/update-locker">Update Locker</router-link></a>
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
 						</li>

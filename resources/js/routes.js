@@ -9,8 +9,13 @@ const BrandList = () => import('./views/Base/brands/BrandList.vue');
 const CreateManufacture = () => import('./views/Base/manufactures/CreateManufacture.vue');
 const ManufactureList = () => import('./views/Base/manufactures/ManufactureList.vue');
 const Sales = () => import('./views/sales.vue');
-const PurchaseReturn = () => import('./views/purchase/PurchaseReturn.vue');
-const PurchaseReturnList = () => import('./views/purchase/PurchaseReturnList.vue');
+const CreatePurchaseReturn = () => import('./views/purchases/CreatePurchaseReturn.vue');
+const PurchaseReturnList = () => import('./views/purchases/PurchaseReturnList.vue');
+const PurchaseReturnInvoice = () => import('./views/purchases/PurchaseReturnInvoice.vue');
+const LockerList = () => import('./views/lockers/LockerList.vue');
+const UpdateLocker = () => import('./views/lockers/UpdateLocker.vue');
+const CreateLocker = () => import('./views/lockers/CreateLocker.vue');
+
 
 
 
@@ -69,15 +74,34 @@ const routes = [
     },
     {
         path: '/create-purchase-return',
-        name: 'PurchaseReturn',
-        component: PurchaseReturn
+        name: 'CreatePurchaseReturn',
+        component: CreatePurchaseReturn
     },
         {
         path: '/purchase-return-list',
         name: ' PurchaseReturnList',
         component:PurchaseReturnList
     },
-   
+    {
+        path: '/purchase-return-invoice',
+        name: ' PurchaseReturnInvoice',
+        component:PurchaseReturnInvoice
+    },
+    {
+        path: '/locker-list',
+        name: ' LockerList',
+        component:LockerList
+    },
+    {
+        path: '/update-locker',
+        name: ' UpdateLocker',
+        component:UpdateLocker
+    },
+    {
+        path: '/create-locker',
+        name: ' CreateLocker',
+        component:CreateLocker
+    },
 
 ]
 
