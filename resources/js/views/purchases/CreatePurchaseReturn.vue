@@ -34,9 +34,9 @@
           <div class="p-field p-col">
             <label for="warehouse">Werehouse</label>
             <Dropdown
-              v-model="customerName"
-              :options="customerName"
-              optionLabel="customerName"
+              v-model="warehouse"
+              :options="warehouse"
+              optionLabel="warehouse"
               :filter="true"
               placeholder="Product"
             />
@@ -208,10 +208,42 @@ export default {
         { label: "Puchase Return List",to:"/purchase-return-list" },
           { label: "Purchase Return Invoice",to:"/purchase-return-invoice"},
         { label: "Create Puchase Return"},
-       
-        
-
       ],
+      customerName:[
+        {customerName:'Customer 1'},
+        {customerName:'Customer 2'},
+      ],
+         warehouse:[
+        {warehouse:'warehouse 1'},
+        {warehouse:'warehouse 2'},
+      ],
+         invoiceNumber:[
+        {invoiceNumber:'invoiceNumber 1'},
+        {invoiceNumber:'invoiceNumber 2'},
+      ],
+         invoiceNumber:[
+        {invoiceNumber:'invoiceNumber 1'},
+        {invoiceNumber:'invoiceNumber 2'},
+      ],
+        purchaseReturnStatus:[
+        {purchaseReturnStatus:'Order '},
+        {purchaseReturnStatus:'Unorder'},
+      ],
+         paymentSystem:[
+        {paymentSystem:'Cash '},
+        {paymentSystem:'Paypal'},
+      ],
+          salesBy:[
+        {salesBy:'Cash '},
+        {salesBy:'Paypal'},
+      ],
+             productName:[
+        {productName:'Cash '},
+        {productName:'Paypal'},
+      ],
+    
+      
+
     };
   },
   methods: {

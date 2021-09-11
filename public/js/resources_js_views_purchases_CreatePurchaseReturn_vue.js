@@ -15,6 +15,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var primevue_textarea__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! primevue/textarea */ "./node_modules/primevue/textarea/index.js");
 /* harmony import */ var primevue_calendar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! primevue/calendar */ "./node_modules/primevue/calendar/index.js");
 /* harmony import */ var primevue_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! primevue/button */ "./node_modules/primevue/button/index.js");
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -213,7 +215,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   name: "CreatePurchaseReturn",
   data: function data() {
-    return {
+    var _ref;
+
+    return _ref = {
       date1: null,
       items: [{
         productName: "",
@@ -235,8 +239,43 @@ __webpack_require__.r(__webpack_exports__);
         to: "/purchase-return-invoice"
       }, {
         label: "Create Puchase Return"
+      }],
+      customerName: [{
+        customerName: 'Customer 1'
+      }, {
+        customerName: 'Customer 2'
+      }],
+      warehouse: [{
+        warehouse: 'warehouse 1'
+      }, {
+        warehouse: 'warehouse 2'
+      }],
+      invoiceNumber: [{
+        invoiceNumber: 'invoiceNumber 1'
+      }, {
+        invoiceNumber: 'invoiceNumber 2'
       }]
-    };
+    }, _defineProperty(_ref, "invoiceNumber", [{
+      invoiceNumber: 'invoiceNumber 1'
+    }, {
+      invoiceNumber: 'invoiceNumber 2'
+    }]), _defineProperty(_ref, "purchaseReturnStatus", [{
+      purchaseReturnStatus: 'Order '
+    }, {
+      purchaseReturnStatus: 'Unorder'
+    }]), _defineProperty(_ref, "paymentSystem", [{
+      paymentSystem: 'Cash '
+    }, {
+      paymentSystem: 'Paypal'
+    }]), _defineProperty(_ref, "salesBy", [{
+      salesBy: 'Cash '
+    }, {
+      salesBy: 'Paypal'
+    }]), _defineProperty(_ref, "productName", [{
+      productName: 'Cash '
+    }, {
+      productName: 'Paypal'
+    }]), _ref;
   },
   methods: {
     add: function add() {
@@ -4369,17 +4408,17 @@ var render = function() {
                       _vm._v(" "),
                       _c("Dropdown", {
                         attrs: {
-                          options: _vm.customerName,
-                          optionLabel: "customerName",
+                          options: _vm.warehouse,
+                          optionLabel: "warehouse",
                           filter: true,
                           placeholder: "Product"
                         },
                         model: {
-                          value: _vm.customerName,
+                          value: _vm.warehouse,
                           callback: function($$v) {
-                            _vm.customerName = $$v
+                            _vm.warehouse = $$v
                           },
-                          expression: "customerName"
+                          expression: "warehouse"
                         }
                       })
                     ],

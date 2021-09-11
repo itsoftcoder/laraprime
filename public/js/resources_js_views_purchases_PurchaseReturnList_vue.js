@@ -190,45 +190,6 @@ __webpack_require__.r(__webpack_exports__);
         TotalProduct: "99933"
       }, {
         PurchaseReturnDate: "",
-        CustomerName: "Name3",
-        Werehouse: "Employe designation List",
-        ReferenceNo: "222",
-        InvoiceNo: "2223",
-        PurchaseReturnStatus: "true",
-        PaymentSystem: "cash",
-        SalesBy: "Active",
-        TotalPrice: "1233",
-        TotalSubPrice: "233",
-        SlotQty: "233",
-        TotalProduct: "99933"
-      }, {
-        PurchaseReturnDate: "",
-        CustomerName: "Name3",
-        Werehouse: "Employe designation List",
-        ReferenceNo: "222",
-        InvoiceNo: "2223",
-        PurchaseReturnStatus: "true",
-        PaymentSystem: "cash",
-        SalesBy: "Active",
-        TotalPrice: "1233",
-        TotalSubPrice: "233",
-        SlotQty: "233",
-        TotalProduct: "99933"
-      }, {
-        PurchaseReturnDate: "",
-        CustomerName: "Name3",
-        Werehouse: "Employe designation List",
-        ReferenceNo: "222",
-        InvoiceNo: "2223",
-        PurchaseReturnStatus: "true",
-        PaymentSystem: "cash",
-        SalesBy: "Active",
-        TotalPrice: "1233",
-        TotalSubPrice: "233",
-        SlotQty: "233",
-        TotalProduct: "99933"
-      }, {
-        PurchaseReturnDate: "",
         CustomerName: "Name4",
         Werehouse: "Employe designation List",
         ReferenceNo: "222",
@@ -279,6 +240,45 @@ __webpack_require__.r(__webpack_exports__);
         TotalSubPrice: "233",
         SlotQty: "233",
         TotalProduct: "99933"
+      }, {
+        PurchaseReturnDate: "",
+        CustomerName: "Name8",
+        Werehouse: "Employe designation List",
+        ReferenceNo: "222",
+        InvoiceNo: "2223",
+        PurchaseReturnStatus: "true",
+        PaymentSystem: "cash",
+        SalesBy: "Active",
+        TotalPrice: "1233",
+        TotalSubPrice: "233",
+        SlotQty: "233",
+        TotalProduct: "99933"
+      }, {
+        PurchaseReturnDate: "",
+        CustomerName: "Name9",
+        Werehouse: "Employe designation List",
+        ReferenceNo: "222",
+        InvoiceNo: "2223",
+        PurchaseReturnStatus: "true",
+        PaymentSystem: "cash",
+        SalesBy: "Active",
+        TotalPrice: "1233",
+        TotalSubPrice: "233",
+        SlotQty: "233",
+        TotalProduct: "99933"
+      }, {
+        PurchaseReturnDate: "",
+        CustomerName: "Name10",
+        Werehouse: "Employe designation List",
+        ReferenceNo: "222",
+        InvoiceNo: "2223",
+        PurchaseReturnStatus: "true",
+        PaymentSystem: "cash",
+        SalesBy: "Active",
+        TotalPrice: "1233",
+        TotalSubPrice: "233",
+        SlotQty: "233",
+        TotalProduct: "99933"
       }],
       filters: {},
       selectedDesignation: null,
@@ -294,7 +294,7 @@ __webpack_require__.r(__webpack_exports__);
         to: "/create-purchase-return"
       }, {
         label: "Purchase Return Invoice",
-        to: "/purchase-return-nvoice"
+        to: "/purchase-return-invoice"
       }, {
         label: "Puchase Return List"
       }]

@@ -927,16 +927,7 @@ var render = function() {
                       ]),
                       _c("br"),
                       _vm._v(" "),
-                      _c("InputText", {
-                        attrs: { type: "text" },
-                        model: {
-                          value: _vm.value,
-                          callback: function($$v) {
-                            _vm.value = $$v
-                          },
-                          expression: "value"
-                        }
-                      })
+                      _c("InputText", { attrs: { type: "text" } })
                     ],
                     1
                   ),
@@ -951,14 +942,7 @@ var render = function() {
                       _c("br"),
                       _vm._v(" "),
                       _c("Textarea", {
-                        attrs: { autoResize: true, rows: "1", cols: "30" },
-                        model: {
-                          value: _vm.value2,
-                          callback: function($$v) {
-                            _vm.value2 = $$v
-                          },
-                          expression: "value2"
-                        }
+                        attrs: { autoResize: true, rows: "1", cols: "30" }
                       })
                     ],
                     1

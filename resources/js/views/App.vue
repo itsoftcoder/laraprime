@@ -72,8 +72,8 @@
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/purchase-return-invoice">Purchase Return Invoice</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
-						</li>
+					
+					
 					</ul>
 			
 				</li>
@@ -91,8 +91,8 @@
 						</li>
 						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/update-locker">Update Locker</router-link></a>
 						</li>
-						<li> <a><i class="pi pi-arrow-right"></i><router-link to="/manufacture-list">Manufacture List</router-link></a>
-						</li>
+						
+					
 					</ul>
 			
 				</li>

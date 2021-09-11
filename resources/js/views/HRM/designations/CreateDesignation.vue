@@ -14,11 +14,11 @@
         <div class="p-fluid p-formgrid p-grid">
           <div class="p-field p-col">
             <label for="designationName">Designation Name </label><br />
-            <InputText type="text" v-model="value" />
+            <InputText type="text"  />
           </div>
           <div class="p-field p-col">
             <label for="description">Description </label><br />
-            <Textarea v-model="value2" :autoResize="true" rows="1" cols="30" />
+            <Textarea  :autoResize="true" rows="1" cols="30" />
           </div>
         </div>
         <div class="form-group">

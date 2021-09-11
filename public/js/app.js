@@ -57470,21 +57470,6 @@ var render = function() {
                     ],
                     1
                   )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/manufacture-list" } },
-                        [_vm._v("Manufacture List")]
-                      )
-                    ],
-                    1
-                  )
                 ])
               ])
             ]),
@@ -57527,21 +57512,6 @@ var render = function() {
                       _c("router-link", { attrs: { to: "/update-locker" } }, [
                         _vm._v("Update Locker")
                       ])
-                    ],
-                    1
-                  )
-                ]),
-                _vm._v(" "),
-                _c("li", [
-                  _c(
-                    "a",
-                    [
-                      _c("i", { staticClass: "pi pi-arrow-right" }),
-                      _c(
-                        "router-link",
-                        { attrs: { to: "/manufacture-list" } },
-                        [_vm._v("Manufacture List")]
-                      )
                     ],
                     1
                   )
